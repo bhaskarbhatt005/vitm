@@ -3,11 +3,12 @@
 
 body {
   line-height: 1.5;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins";
   font-weight: 400;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 html{
   height: 100%;
@@ -72,7 +73,7 @@ a {
   display: block;
   padding: 12px 0;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
@@ -334,6 +335,18 @@ a {
   padding-top: 6em;
   padding-left: 3.5em;
   padding-right: 3.5em;
+}
+
+.about-sec{
+  font-family: 'Poppins';
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-top: 6em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  margin-bottom: 30px;
 }
 
 .about-row{
@@ -901,101 +914,109 @@ a {
 
 /*---------footer------------*/
 
-.Container {
-  max-width: 1170px;
-  margin: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-col ul {
-  list-style: none;
-}
-
-.footer {
-  background-color: #24262b;
-  padding: 30px 0;
-  margin-top: auto;
-  display: flex;
-}
-
-.footer-col {
-  width: 18%;
-  padding: 0 20px;
-}
-
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: 50px;
-  width: 50px;
-}
-
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
+a{
   text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
+  transition: 0.5s;
+  color: #fff;
+}
+.footer_infoul .li{
+  list-style-type: none;
+}
+footer{
+  background-color: #24262b;
+  color: #fff;
+}
+.footer_info{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0;
 }
 
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
+.footer_info .footer_width{
+  padding: 0 15px;
+}
+.footer_info h2{
+  margin-bottom: 20px;
 }
 
-.footer-col .social-links a {
+.footer_width{
+  width: 40%;
+}
+.about, .contact {
+  width: 40%;
+}
+.link{
+  width: 40%;
+  margin-left: 10%;
+
+  
+}
+
+
+.social_media{
+  margin-top: 20px;
+}
+.social_media ul{
+  display: flex;
+}
+.social_media ul li a{
   display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
+  margin-right: 50px;
+  width: 50px;
+  height: 50px;
+  padding-top: 12px;
+  background-color: transparent;
+  border: 1px solid #fff;
   text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover {
+.link ul li a{
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.link ul li a:hover{
+  color: orange;
+}
+.social_media ul li a:hover{
+  background-color: #fff;
   color: #24262b;
-  background-color: #ffffff;
+}
+.contact ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contact ul li span{
+  margin-right: 15px;
 }
 
-/* Responsive */
-
-@media (max-width: 760px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+@media screen and (max-width:992px){
+  .about , .contact{
+    width: 45%;
+  }
+  .link{
+    width: 30%;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .footer_width{
+    width: 35%;
   }
 }
-@media (max-width: 570px) {
-  .footer-col {
+@media screen and (max-width:768px){
+  .about , .contact , .link{
     width: 100%;
+    margin-bottom: 60px;
+  }
+  .footer_info{
+    flex-direction: column;
+  }
+  .footer_width{
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: left;
   }
 }
 
@@ -1097,6 +1118,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .facilities-col{
@@ -1360,7 +1382,6 @@ section#hero{
 #hero{
   min-height: 100vh;
   width: 100%;
-  background-color: #000;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(college.jpg);
   background-size: cover;
   background-position: center;
