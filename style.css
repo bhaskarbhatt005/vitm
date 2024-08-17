@@ -1380,6 +1380,41 @@ footer {
     padding-left: 0%;
   }
 }
+@media (max-width: 1024px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: justify;
+  }
+
+  .footer-section {
+      flex: 1 1 100%;
+      text-align: left;
+  }
+  .footer-section .align{
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-container {
+      /* flex-direction: column; */
+      align-items: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: justify;
+  }
+
+  .footer-section {
+      flex: 1 1 100%;
+      text-align: left;
+  }
+  .footer-section .align{
+    padding-left: 0%;
+  }
+}
 
 
 
