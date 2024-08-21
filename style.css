@@ -49,11 +49,12 @@ a {
   
 }
 .header-main {
-  background-color: #24262b;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.341);
   
 }
 .header .logo {
@@ -79,7 +80,7 @@ a {
   padding: 12px 0;
   margin-right: 15px;
   font-size: 16px;
-  color: #fff;
+  color: #24262b;
   text-transform: capitalize;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -99,7 +100,7 @@ a {
   box-sizing: border-box;
   left: 50%;
   top: 50%;
-  background-color: #fff;
+  background-color: #262626;
   height: 2px;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -117,12 +118,12 @@ a {
   color: #e91e63;
 }
 .header .menu > .menu-item > .sub-menu {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 10px #fff; */
   width: 220px;
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: #24262b;
+  background-color: #fff;
   padding: 10px 0;
   border-top: 3px solid #e91e63;
   transform: translateY(10px);
@@ -148,7 +149,7 @@ a {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #24262b;
   transition: all 0.3s ease;
   text-transform: capitalize;
 }
@@ -160,13 +161,13 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #fff;
+  color: #24262b;
 }
 
 .header .close-nav-menu {
   height: 40px;
   width: 40px;
-  background-color: #24262b;
+  background-color: #fff;
   margin: 0 0 15px 15px;
   cursor: pointer;
   display: none;
@@ -179,7 +180,7 @@ a {
 .header .menu-overlay {
   position: fixed;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.085);
   left: 0;
   top: 0;
   height: 100%;
@@ -207,7 +208,7 @@ a {
     height: 100%;
     top: 0;
     overflow-y: auto;
-    background-color: #222222;
+    background-color: #fff;
     z-index: 1000;
     padding: 15px 0;
     transition: all 0.5s ease;
@@ -226,16 +227,16 @@ a {
     align-items: center;
   }
   .header .menu > .menu-item > a {
-    color: #ffffff;
+    color: #24262b;
     padding: 12px 15px;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.321);
   }
   .header .menu > .menu-item:first-child > a {
-    border-top: 1px solid #333333;
+    border-top: 1px solid rgba(128, 128, 128, 0.321);
   }
   .header .menu > .menu-item > a .plus:before,
   .header .menu > .menu-item > a .plus:after {
-    background-color: #ffffff;
+    background-color: #24262b;
   }
   .header .menu > .menu-item-has-children.active > a .plus:after {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -257,8 +258,8 @@ a {
   }
   .header .menu > .menu-item > .sub-menu > .menu-item > a {
     padding: 12px 45px;
-    color: #ffffff;
-    border-bottom: 1px solid #333333;
+    color: #24262b;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.321);
   }
   .header .close-nav-menu,
   .header .open-nav-menu {
@@ -995,10 +996,10 @@ form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: rgba(128, 128, 128, 0.323);
   padding: 15px;
   margin: 15px 0;
-  color: #fff;
+  color: #262626;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -1313,10 +1314,11 @@ section#hero{
 }
 
 footer {
-  background-color: #24262b;
-  color: #fff;
+  background-color: #fff;
+  color: #24262b;
   padding: 20px 0;
   width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
 }
 
 .footer-container {
@@ -1354,7 +1356,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: #24262b;
   text-decoration: none;
 }
 
@@ -1371,7 +1373,7 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #44444458;
   padding-top: 10px;
 }
 
@@ -1390,14 +1392,14 @@ footer {
   width: 31px;
   height: 31px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #24262b;
   text-align: center;
   border-radius: 50%;
 }
 
 .social_media ul li a:hover{
-  background-color: #fff;
-  color: #24262b;
+  background-color:#fff;
+  color: #ff004f;
 }
 @media (max-width: 768px) {
   .footer-container {
